@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Leads]" guice-stage="DEVELOPMENT">
+  <parameter name="webSite" value="https://altoconvertpdftojpg.com/"/>
+  <parameter name="fileName" value="fileupload|"/>
+  <parameter name="UserName" value="demosalesmanager"/>
+  <parameter name="PassWord" value="crmsfa"/>
+  <parameter name="leadId" value="15253"/>
+  <test thread-count="5" name="CreateLead(failed)">
+    <classes>
+      <class name="testNG.testcases.TC_005_FileUploadPage">
+        <methods>
+          <include name="stopReport"/>
+          <include name="setValues"/>
+          <include name="uploadFile" invocation-numbers="0"/>
+          <include name="report"/>
+          <include name="startReport"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testNG.testcases.TC_005_FileUploadPage -->
+    </classes>
+  </test> <!-- CreateLead(failed) -->
+</suite> <!-- Failed suite [Leads] -->

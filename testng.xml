@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Leads">
+<parameter name="PassWord"  value="crmsfa"/> 
+<parameter name="UserName"  value="demosalesmanager"/> 
+<parameter name="leadId"  value="15253"/>
+<parameter name="webSite"  value="https://altoconvertpdftojpg.com/"/>
+<parameter name="fileName"  value="fileupload"/>
+  <test thread-count="5" name="CreateLead">
+    <classes>
+      <class name="testNG.testcases.TC_005_FileUploadPage"/>
+    </classes>
+  </test> <!-- CreateLead -->
+</suite> <!-- Leads -->
